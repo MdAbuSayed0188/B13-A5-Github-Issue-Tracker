@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#F8FAFC] h-svh flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg">
+      <img
+        src="./assets/github-logo.png"
+        alt="GitHub Logo"
+        class="w-14 mx-auto mb-3"
+      />
+      <h2 class="text-xl font-semibold flex items-center justify-center">
+        GitHub Issues Tracker
+      </h2>
+      <p class="text-gray-500 text-sm mb-5 flex items-center justify-center">
+        Sign in to manage your issues
+      </p>
+      <div class="text-left mb-4">
+        <label class="text-sm font-medium">Username</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Enter Username"
+          class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+        />
+        <p class="text-xs text-blue-600 mt-1">Default: admin</p>
+      </div>
+      <div class="text-left mb-4">
+        <label class="text-sm font-medium">Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter Password"
+          class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+        />
+        <p class="text-xs text-blue-600 mt-1">Default: admin123</p>
+      </div>
+      <button id="signin-btn" type="submit" class="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500">
+        Sign In
+      </button>
+      <p class="text-gray-400 text-sm my-4 flex items-center justify-center">
+        OR
+      </p>
+      <div>
+        <p class="font-semibold flex items-center justify-center p-4">
+          Demo Credentials
+        </p>
+        <div class="bg-gray-200 p-3 rounded-md text-sm">
+          <p>Username: admin</p>
+          <p>Password: admin123</p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
