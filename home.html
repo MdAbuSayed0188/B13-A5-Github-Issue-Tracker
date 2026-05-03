@@ -67,6 +67,69 @@
         </div>
       </nav>
     </header>
+    <main class="w-[1110px] mt-10 mx-auto">
+      <!-- all open closed -->
+      <section>
+        <div id="select" class="bg-white gap-5 flex flex-direction-col">
+          <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+            All
+          </button>
+          <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+            Open
+          </button>
+          <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+            Closed
+          </button>
+        </div>
+      </section>
+
+      <!-- issue count and open closed count -->
+      <section
+        class="bg-white flex justify-between items-center mt-7 border border-gray-300 rounded-xl p-2"
+      >
+        <div class="flex items-center justify-center gap-4">
+          <img src="./assets/Aperture.png" alt="" />
+
+          <div id="issue-count" class="mt-4">
+            <h3 id="issue-total" class="font-semibold text-[24px]"></h3>
+            <p id="issue-description" class="text-gray-600">
+              Track and manage your project issues
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex items-center justify-center">
+            <img src="./assets/Open-Status.png" alt="" />
+            <h3>Open</h3>
+          </div>
+          <div class="flex items-center justify-center">
+            <img src="./assets/Closed.png" alt="" />
+            <h3>Closed</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- loading state -->
+      <div id="loading" class="flex items-center justify-center gap-4">
+        <span class="loading loading-spinner loading-lg"></span>
+        <span class="loading loading-spinner loading-lg"></span>
+        <span class="loading loading-spinner loading-lg"></span>
+      </div>
+
+      <!-- no cards found -->
+      <div id="noCards" class="flex items-center justify-center gap-4 p-4">
+        <span class="text-gray-600 text-lg">No issues found.</span>
+      </div>
+
+      <!-- all cards -->
+      <section
+        id="card-containar"
+        class="bg-white grid grid-cols-3 gap-2 p-5"
+      ></section>
+
+      
+    </main>
+
     
   </body>
 </html>
