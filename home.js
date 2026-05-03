@@ -154,6 +154,17 @@ const setActive = (activeBtn) => {
   activeBtn.classList.add("btn-primary");
 };
 
+const handleSearch = (searchValue) => {
+  fetch(
+    ` https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchValue}`,
+  )
+    .then((res) => res.json())
+    .then((data) => displayCards(data.data));
+};
 
+searchBtn.addEventListener("click", () => {
+  const searchInput = document.getElementById("searchInput").value;
+  handleSearch(searchInput);
+});
 
 fetchcards("all");
