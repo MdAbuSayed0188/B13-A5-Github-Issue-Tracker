@@ -135,6 +135,25 @@ const displayCards = (cards) => {
   });
 };
 
+document.getElementById("select").addEventListener("click", (e) => {
+  if (e.target.tagName.toLowerCase() === "button") {
+    const selectedValue = e.target.innerText.toLowerCase();
+    fetchcards(selectedValue);
+    setActive(e.target);
+  }
+});
+
+// active button
+const setActive = (activeBtn) => {
+  const buttons = document.querySelectorAll("#select button");
+
+  buttons.forEach((btn) => {
+    btn.classList.remove("btn-primary");
+  });
+
+  activeBtn.classList.add("btn-primary");
+};
+
 
 
 fetchcards("all");
