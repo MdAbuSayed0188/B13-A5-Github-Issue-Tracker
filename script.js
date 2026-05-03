@@ -10,7 +10,7 @@ signinBtn.addEventListener("click", (e) => {
     }
     else if (usernameValue === "admin" && passwordValue === "admin123") {
         
-        
+        window.location.href = "./home.html";
     }
     else {
         alert("Invalid username or password");
