@@ -41,7 +41,7 @@ const displayCards = (cards) => {
     const cardElement = document.createElement("div");
     cardElement.classList.add("card");
     cardElement.innerHTML = `
-        <div onclick="document.getElementById('${card.id}').showModal()" class="bg-white drop-shadow-lg p-5 rounded-xl border-t-3 h-full ${
+        <div onclick="document.getElementById('${card.id}').showModal()" class="bg-white drop-shadow-lg p-5 rounded-xl border-t-3 h-full  ${
           card.status === "open" ? "border-[#28A745]" : "border-[#A855F7]"
         }">
           <div class="flex justify-between">
